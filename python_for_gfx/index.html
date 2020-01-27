@@ -1,0 +1,636 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Python for Graphics Programming</title>
+
+	<meta name="description" content="Presentation made with reveal.js">
+	<meta name="author" content="Mark Joseph J. Solidarios">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="assets/bg0.jpg">
+				<h1>Learning Python</h1>
+				<p>for Graphics Programming</p>
+				<p>
+					<small>Mark Joseph J. Solidarios</small>
+				</p>
+				<p>
+					<a href="mailto: mjsolidarios@wvsu.edu.ph">
+						<i class="fa glyphicon glyphicon-envelope"></i>
+					</a>
+					<a href="https://github.com/mjsolidarios">
+						<i class="fa fa-github"></i>
+					</a>
+					<a href="https://www.facebook.com/markusjosesolid">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="https://www.twitter.com/mjsolidarios">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</p>
+			</section>
+			<section data-background="assets/bg0.jpg" class="left">
+				<img src="assets/nav.svg" alt="" class="icon-md" />
+				<p><small>
+						<i class="glyphicon glyphicon-info-sign"></i> Use the navigation buttons or the arrow keys to
+						proceed to the remaining slides.
+					</small></p>
+				<h2>F</h2>
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> You can also press
+						<span class="highlight">&gt;</span>
+						<span class="highlight">&gt;</span>F
+						<span class="highlight">&lt;</span>
+						<span class="highlight">&lt;</span> on your keyboard to show your presentation in fullscreen
+						mode.
+					</small>
+				</p>
+				<img src="assets/explore.svg" class="icon-md" alt="" />
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> This presentation is best explored with up-to-date
+						web browsers.
+					</small>
+				</p>
+			</section>
+			<section data-background="#4CAF50">
+				<img src="assets/Python-logo-notext.svg" alt="">
+				<h2 style="color:#FFF">Python</h2>
+				<p style="color:#FFF">Introduction</p>
+			</section>
+			<section>
+				<h2>What is Python?</h2>
+				<ul>
+					<li class="fragment">A programming language with strong similarities to PERL, but with powerful
+						typing and object oriented features.</li>
+					<li class="fragment">Commonly used for producing HTML content on websites. Great for text files.
+					</li>
+					<li class="fragment">Useful built-in types (lists, dictionaries).</li>
+					<li class="fragment">Clean syntax, powerful extensions.</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<h2>Why Python?</h2>
+					<ul>
+						<li class="fragment">Popular for Machine Learning</li>
+						<li class="fragment">Productivity and readable code</li>
+						<li class="fragment">&quot;Life&apos;s better without braces&quot; -Bruce Eckel</li>
+						<li class="fragment">Natural Language ToolKit</li>
+						<li class="fragment">Ease of use; interpreter</li>
+					</ul>
+					<p class="fragment"><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<h3>AI Processing: Symbolic</h3>
+					<ul>
+						<li class="fragment">Python&apos;s built-in datatypes for strings, lists, and more.</li>
+						<li class="fragment">Java or C++ require the use of special classes for this.</li>
+					</ul>
+					<p class="fragment"><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<h3>AI Processing: Statistical</h3>
+					<ul>
+						<li class="fragment">Python has strong numeric processing capabilities: matrix operations, etc.
+						</li>
+						<li class="fragment">Suitable for probability and machine learning code.</li>
+					</ul>
+				</section>
+			</section>
+			<section style="text-align:left">
+				<h2>Comparison</h2>
+				<p>&quot;<code>Hello World!</code> Demo&quot; in different programming languages.</p>
+			</section>
+			<section>
+				<h2>C++</h2>
+				<pre>
+				  <code>
+#include &lt;iostream&gt;
+using namespace std;
+void main()
+{
+	cout << "Hello World!" << endl;
+	cout << "Welcome to C++ Programming" << endl;
+}
+				  </code>
+				</pre>
+			</section>
+			<section>
+				<h2>C#</h2>
+				<pre>
+				  <code>
+public class Hello1
+{
+	public static void Main()
+		{
+			System.Console.WriteLine("Hello, World!");
+		}
+}
+				  </code>
+				</pre>
+			</section>
+			<section>
+				<h2>Java</h2>
+				<pre>
+				  <code>
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+				  </code>
+				</pre>
+			</section>
+			<section>
+				<h2>JavaScript</h2>
+				<pre>
+				  <code>
+console.log("Hello World")
+				  </code>
+				</pre>
+			</section>
+			<section>
+				<h2>Python</h2>
+				<pre>
+				  <code>
+print("Hello World!") #Python 3.x
+print "Hello World!" #Python 2.7x
+				  </code>
+				</pre>
+			</section>
+			<section>
+				<img src="assets/Python-logo-notext.svg" alt="">
+				<h2>The Basics</h2>
+			</section>
+			<section>
+				<section data-background="#FFF">
+					<h2>Whitespace</h2>
+					<p>Whitespace is meaningful in Python: especially indentation and placement of newlines.</p>
+					<img src="assets/down-arrow-blue.svg" alt="">
+				</section>
+				<section>
+					<h3>Whitespace</h3>
+					<ul>
+						<li class="fragment">Use a newline to end a line of code. (Not a semicolon like in C++ or Java.)
+							(Use \ when must go to next line prematurely.)</li>
+						<li class="fragment">No braces { } to mark blocks of code in Python... Use consistent
+							indentation instead. The first line with a new indentation is considered outside of the
+							block.</li>
+						<li class="fragment">Often a colon appears at the start of a new block. (We&apos;ll see this
+							later for function and class definitions.)</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Comments</h3>
+					<ul>
+						<li class="fragment">Start comments with # – the rest of line is ignored.</li>
+						<li class="fragment">Can include a &quot;documentation string&quot; as the first line of any new
+							function or class that you define.</li>
+						<li class="fragment">The development environment, debugger, and other tools use it: it&quot;s
+							good style to include one.</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h3>Comments</h3>
+				<pre><code>
+def my_function(x, y):
+	“““This is the docstring. This
+	function does blah blah blah.”””
+	# The code would go here...
+				</code></pre>
+			</section>
+			<section>
+				<section>
+					<h2>Python and Types</h2>
+					<img src="assets/down-arrow-blue.svg" alt="">
+				</section>
+				<section>
+					<p>Python determines the data types in a program automatically. <code>&quot;Dynamic
+							Typing&quot;</code></p>
+				</section>
+				<section style="text-align:left">
+					<p>So, for example, you can&apos;t just append an integer to a string. You must first convert the
+						integer to a string itself.</p>
+				</section>
+				<section>
+					<p>But Python&apos;s not casual about types, it enforces them after it figures them out.
+						<code>&quot;Strong Typing&quot;</code></p>
+				</section>
+				<section>
+					<pre><code>
+x = &quot;the answer is&quot; # Decides x is string.
+y = 23 # Decides y is integer.
+print x + y # Python will complain about this.
+			</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Naming Rules</h2>
+					<img src="assets/down-arrow-blue.svg" alt="">
+				</section>
+				<section style="text-align:left">
+					<p>Names are case sensitive and cannot start with a number. They can contain letters, numbers, and
+						underscores.</p>
+					<code>bob</code> <code>Bob</code> <code>_bob</code> <code>_2_bob_</code> <code>bob_2</code>
+					<code>BoB</code>
+				</section>
+				<section>
+					<p>There are some reserved words:</p>
+					<code>and</code>, <code>assert</code>, <code>break</code>, <code>class</code>,
+					<code>continue</code>, <code>def</code>, <code>del</code>, <code>elif</code>,
+					<code>else</code>, <code>except</code>, <code>exec</code>, <code>finally</code>, <code>for</code>,
+					<code>from</code>, <code>global</code>, <code>if</code>,
+					<code>import</code>, <code>in</code>, <code>is</code>, <code>lambda</code>, <code>not</code>,
+					<code>or</code>, <code>pass</code>, <code>print</code>, <code>raise</code>,
+					<code>return</code>, <code>try</code>, <code>while</code>
+				</section>
+			</section>
+			<section style="text-align:left">
+				<h2>Interactive &quot;Shell&quot;</h2>
+				<ul>
+					<li class="fragment">Great for learning the language</li>
+					<li class="fragment">Great for experimenting with the library</li>
+					<li class="fragment">Great for testing your own modules</li>
+					<li class="fragment">Two variations: IDLE (GUI), python (command line)</li>
+				</ul>
+			</section>
+			<section>
+				<p>Type statements or expressions at prompt:</p>
+				<pre><code>
+>>> print("Hello, world")
+Hello, world
+>>> x = 12**2
+>>> x/2
+72
+>>> # this is a comment
+		</code></pre>
+			</section>
+			<section>
+				<h2>Using Python as a Calculator</h2>
+				<ul>
+					<li class="fragment">Instant Calculator! The interpreter acts as a simple calculator: you can type
+						an expression at it and it will write the value.</li>
+					<li class="fragment">Expression syntax is straightforward: the operators +, -, * and / work just
+						like in most other languages</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<h2>Numbers</h2>
+					<img src="assets/down-arrow-blue.svg" alt="">
+				</section>
+				<section>
+					<h2>Numbers</h2>
+					<pre><code>
+>>> 2+2
+4
+>>> # This is a comment
+...2+2
+4
+>>> 2+2 # and a comment on the same line as code
+4
+>>> (50-5*6)/4
+5
+>>> # Integer division returns the floor:
+...7/3
+2
+>>> 7/-3
+-3
+		  </code></pre>
+				</section>
+				<section>
+					<p>Integer division truncates :-(</p>
+					<code style="font-size:0.8em">1/2 -> 0 # 1./2. -> 0.5, float(1)/2 -> 0.5</code>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Strings</h2>
+				</section>
+				<section>
+					<p>String Operations</p>
+					<pre><code>
+>>> #concatenation
+>>> "hello"+"world"
+"helloworld"
+
+>>> #repetition
+>>> "hello"*3
+"hellohellohello"
+
+>>> #indexing
+>>> "hello"[0]
+"h"
+
+>>> #(from end)
+>>> "hello"[-1]
+"o"
+
+>>> #slicing
+>>> "hello"[1:4]
+"ell"
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<pre><code>
+>>> # size
+>>> len("hello")
+5
+
+>>> # comparison
+>>> "hello" < "jello"
+1
+
+>>> # search
+>>> "e" in "hello"
+1
+
+>>> "escapes: \n etc, \033 etc, \if etc"
+
+>>> 'single quotes' """triple quotes""" r"raw strings"
+			</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Data Input</h2>
+				</section>
+				<section>
+					<pre><code>
+>>> i = raw_input("Enter a value: ") # for string input
+>>> i = input("Enter a value: ") # for interpreted input
+				</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Lists</h2>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment">Python knows a number of compound data types, used to group together other
+							values.</li>
+						<li class="fragment">The most versatile is the list, which can be written as a list of
+							comma-separated values (items) between square brackets.</li>
+					</ul>
+				</section>
+				<section>
+					<p>Lists</p>
+					<pre><code>
+>>> a = ['spam', 'eggs', 100, 1234]
+>>> a
+['spam', 'eggs', 100, 1234]
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<p>List</p>
+					<pre><code>
+>>> a[0]
+'spam'
+>>> a[3]
+1234
+>>> a[-2]
+100
+>>> a[1:-1]
+['eggs', 100]
+>>> a[:2] + ['bacon', 2*2]
+['spam', 'eggs', 'bacon', 4]
+>>> 3*a[:3] + ['Boo!']
+['spam', 'eggs', 100, 'spam', 'eggs', 100, 'spam', 'eggs', 100, 'Boo!']
+			</code></pre>
+				</section>
+			</section>
+			<section>
+				<h2><code>print</code> Statement</h2>
+				<pre><code>
+>>> i = 256*256
+>>> print 'The value of i is', i
+The value of i is 65536
+		  </code></pre>
+			</section>
+			<section>
+				<h2><code>if</code> Statements</h2>
+				<pre><code>
+>>> x = int(raw_input("Please enter an integer: "))
+Please enter an integer: 42
+>>> if x < 0:
+...
+x = 0
+...
+print 'Negative changed to zero'
+... elif x == 0:
+...
+print 'Zero'
+... elif x == 1:
+...
+print 'Single'
+... else:
+...
+print 'More'
+...
+More
+		  </code></pre>
+			</section>
+			<section>
+				<section>
+					<h2><code>for</code> Statements</h2>
+					<pre><code>
+#The syntax of a for loop look is as follows:
+for iterating_var in sequence:
+statements(s)
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<p>for Statements</p>
+					<pre><code>
+# First Example
+for letter in 'Python':
+
+	print 'Current Letter :', letter
+
+# Second Example
+fruits = ['banana', 'apple','mango']
+for fruit in fruits:
+
+	print 'Current fruit :', fruit
+
+	print "Good bye!"
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<p>for Statements</p>
+					<pre><code>
+>>> # Measure some strings:
+... words = ['cat', 'window', 'defenestrate']
+>>> for w in words:
+...
+print w, len(w)
+...
+cat 3
+window 6
+defenestrate 12
+			</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Defining Functions</h2>
+					<img src="assets/down-arrow-blue.svg" alt="">
+				</section>
+				<section>
+					<p>Defining Functions</p>
+					<pre><code>
+>>> def fib(n): # write Fibonacci series up to n
+...   """Print a Fibonacci series up to n."""
+...   a, b = 0, 1
+...   while a < n:
+...     print a,
+...     a, b = b, a+b
+...
+>>> # Now call the function we just defined:
+... fib(2000)
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<p>Default Argument Values</p>
+					<pre><code>
+def ask_ok(prompt, retries=4, complaint='Yes or no, please!'):
+	while True:
+	ok = raw_input(prompt)
+	if ok in ('y', 'ye', 'yes'):
+		return True
+	if ok in ('n', 'no', 'nop', 'nope'):
+		return False
+	retries = retries - 1
+	if retries < 0:
+		raise IOError('refusenik user')
+		print complaint
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<pre><code>
+ask_ok(&quot;Do you really want to quit?&quot;)
+
+ask_ok(&quot;OK to overwrite the file?&quot;, 2)
+
+ask_ok(&quot;OK to overwrite the file?&quot;, 2,&quot;Come on, only yes or no!&quot;)
+			</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>creating Classes</h2>
+					<img src="assets/down-arrow-blue.svg" alt="" />
+				</section>
+				<section>
+					<p>Basic Syntax</p>
+					<pre><code>
+class ClassName:
+	'Optional class documentation string'
+	class_suite
+			</code></pre>
+					<p><img src="assets/down-arrow-blue.svg" alt=""></p>
+				</section>
+				<section>
+					<p>Example</p>
+					<pre><code>
+class Employee:
+'Common base class for all employees'
+empCount = 0
+
+def __init__(self, name, salary):
+	self.name = name
+	self.salary = salary
+	Employee.empCount += 1
+
+def displayCount(self):
+	print "Total Employee %d" % Employee.empCount
+	def displayEmployee(self):
+	print "Name : ", self.name,", Salary: ", self.salary
+			</code></pre>
+				</section>
+			</section>
+			<section class="left">
+				<h3>Sample Problem</h3>
+				<p>Create python app that asks the user to enter their name and their age. Print out a message addressed
+					to them and tell them the year that they will turn 100 years old.</p>
+			</section>
+			<section style="text-align:left">
+				<h2>References</h2>
+				<ul>
+					<li><a href="http://www.python.org/">python.org</a></li>
+					<li><a href="http://www.tutorialspoint.com/python/index.htm">tutorialspoint.com</a></li>
+					<li><a href="http://ironpython.codeplex.com/">ironpython.codeplex.com</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Thank You!</h2>
+				<p>
+					<small>This presentation is made of <i class="fa glyphicon glyphicon-heart"></i> and <strong>HTML
+							5</strong></small>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
