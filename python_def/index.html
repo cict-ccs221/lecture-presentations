@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Python Def</title>
+
+	<meta name="description" content="Presentation made with reveal.js">
+	<meta name="author" content="Mark Joseph J. Solidarios">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="assets/bg0.jpg">
+				<h1>Functions and Methods</h1>
+				<p>Python Programming</p>
+				<div class="social-container">
+					<small>
+						Mark Joseph J. Solidarios
+						<a href="mailto: mjsolidarios@wvsu.edu.ph" target="_blank">
+							<img class="social" src="assets/mail.svg">
+						</a>
+						<a href="https://github.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/github.svg">
+						</a>
+						<a href="https://www.facebook.com/sexynojutsuuser" target="_blank">
+							<img class="social" src="assets/facebook.svg">
+						</a>
+						<a href="https://www.twitter.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/twitter.svg">
+						</a>
+					</small>
+				</div>
+			</section>
+			<section data-background="assets/bg0.jpg" class="left">
+				<img src="assets/nav.svg" alt="" class="icon-md" />
+				<p><small>
+						<i class="glyphicon glyphicon-info-sign"></i> Use the navigation buttons or the arrow keys to
+						proceed to the remaining slides.
+					</small></p>
+				<h2>F</h2>
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> You can also press
+						<span class="highlight">&gt;</span>
+						<span class="highlight">&gt;</span>F
+						<span class="highlight">&lt;</span>
+						<span class="highlight">&lt;</span> on your keyboard to show your presentation in fullscreen
+						mode.
+					</small>
+				</p>
+				<img src="assets/explore.svg" class="icon-md" alt="" />
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> This presentation is best explored with up-to-date
+						web browsers.
+					</small>
+				</p>
+			</section>
+			<section data-background="assets/bg0.jpg"><img class="img-basic" src="assets/meme-1.png" alt=""></section
+				data-background="assets/bg0.jpg">
+			<section data-background="assets/bg0.jpg">
+				<h3>What are Functions?</h3>
+				<p>
+					<ul>
+						<li class="fragment">Fragment of Code</li>
+						<li class="fragment">Can Accept Arguments</li>
+						<li class="fragment">Can Produce a Result Value</li>
+						<li class="fragment">Can Affect How Your App Works</li>
+					</ul>
+				</p>
+				<div class="fragment">
+					<pre><code>
+# example
+len("hello")
+# result: 6					
+					</code></pre>
+				</div>
+			</section data-background="assets/bg0.jpg">
+			<section data-background="assets/bg0.jpg">
+				<h3>What are Methods?</h3>
+				<p>
+					<ul>
+						<li class="fragment">Transforms an Object</li>
+						<li class="fragment">Also Known as the Modifier</li>
+						<li class="fragment">Always Belongs to an Object</li>
+					</ul>
+				</p>
+				<div class="fragment">
+					<pre><code>
+# example
+something.method()					
+					</code></pre>
+				</div>
+			</section>
+
+			<section data-background="assets/bg0.jpg">
+				<p class="left">All methods are functions, but not all functions are methods!</p>
+				<pre><code>
+# a function
+function(something)
+# a method
+something.method()
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>
+					In Python, a function is defined using the def keyword:
+				</p>
+				<pre><code>
+def my_function():
+	print("Hello CICTzens") 				
+			</code></pre>
+				<p>After definition, it can be called:</p>
+				<pre><code>
+my_function()	
+# result: Hello CICTzens 
+</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>You can also pass parameters like so:</p>
+				<pre><code>
+def my_function(a,b,c):
+	print(a+b+c)
+
+my_function(1,0,3)
+
+#result:4
+			</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>...or return a value</p>
+				<pre><code>
+def my_function(a,b,c):
+	return a+b+c
+
+print(my_function(1,0,3))
+
+#result:4
+				</code></pre>
+			</section>
+			<section>
+				<section data-background="assets/bg0.jpg">
+					<p>Using Functions == Cleaner Code</p>
+					<p><small>Create two python files with the following contents:</small></p>
+					<pre><code>
+#utilities.py
+def add(a, b):
+	"""This program adds two
+	numbers and return the result"""
+	result = a + b
+	return result
+		</code></pre>
+					<img src="assets/down-arrow-blue.svg" alt="" srcset="">
+				</section>
+				<section data-background="assets/bg0.jpg">
+					<pre><code>
+#main.py
+import utilities
+print utilities.add(1,2)
+# result: 3
+			</code></pre>
+				</section>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h2>Turtle Graphics</h2>
+				<p>Have fun with Functions</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p><small>Answer the question in Hiligaynon:</small></p>
+				<img style="width: 150px; height: auto;" src="assets/Python-logo-notext.svg" alt="">
+				<blockquote class="fragment">
+					Q: Ngaa perme lang gakadula ang bao?
+				</blockquote>
+				<blockquote class="fragment">
+					A: Kay indi siya daan ka turtle!
+				</blockquote>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>Exercise</p>
+			<pre><code>
+# optimise the given code, make it shorter using functions and loops
+import turtle
+
+window = turtle.Screen()
+window.bgcolor("#333333")
+junjun = turtle.Turtle()
+junjun.color("yellow")
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+junjun.forward(100)
+junjun.left(90)
+junjun.left(18)	
+turtle.done()				
+			</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+			<h2>Homework</h2>
+			<p><a href="http://bit.ly/39focXp">http://bit.ly/39focXp</a></p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h2>Thank You!</h2>
+				<p>
+					<small>This presentation is made of &lt;3 and <strong>HTML
+							5</strong></small>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
