@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Python OpenGL</title>
+
+	<meta name="description" content="Presentation made with reveal.js">
+	<meta name="author" content="Mark Joseph J. Solidarios">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="assets/bg0.jpg">
+				<h1>Python + OpenGL</h1>
+				<p>Your fist Hello OpenGL App</p>
+				<div class="social-container">
+					<small>
+						Mark Joseph J. Solidarios
+						<a href="mailto: mjsolidarios@wvsu.edu.ph" target="_blank">
+							<img class="social" src="assets/mail.svg">
+						</a>
+						<a href="https://github.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/github.svg">
+						</a>
+						<a href="https://www.facebook.com/sexynojutsuuser" target="_blank">
+							<img class="social" src="assets/facebook.svg">
+						</a>
+						<a href="https://www.twitter.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/twitter.svg">
+						</a>
+					</small>
+				</div>
+			</section>
+			<section data-background="assets/bg0.jpg" class="left">
+				<img src="assets/nav.svg" alt="" class="icon-md" />
+				<p><small>
+						<i class="glyphicon glyphicon-info-sign"></i> Use the navigation buttons or the arrow keys to
+						proceed to the remaining slides.
+					</small></p>
+				<h2>F</h2>
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> You can also press
+						<span class="highlight">&gt;</span>
+						<span class="highlight">&gt;</span>F
+						<span class="highlight">&lt;</span>
+						<span class="highlight">&lt;</span> on your keyboard to show your presentation in fullscreen
+						mode.
+					</small>
+				</p>
+				<img src="assets/explore.svg" class="icon-md" alt="" />
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> This presentation is best explored with up-to-date
+						web browsers.
+					</small>
+				</p>
+			</section>
+			<section>
+				<img style="width: auto; height: 200px;" src="assets/opengl.svg" alt="">
+				<p class="fragment">
+					API designed for rendering 2D and 3D graphics. 
+				</p>
+			</section>
+			<section>
+				<p>Add the dependencies</p>
+				<pre><code>
+import sys
+import ctypes
+import numpy as np
+import OpenGL.GL as gl
+import OpenGL.GLUT as glut					
+				</code></pre>
+			</section>
+			<section>
+				<p>Define the shaders</p>
+				<pre><code>
+vertex_code = """
+	attribute vec2 position;
+	void main(){ gl_Position = vec4(position, 0.0, 1.0); } 	"""
+
+fragment_code = """
+	void main() { gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0); } """
+				</code></pre>
+			</section>
+			<section>
+				<p>Define the Screen Functions</p>
+				<pre><code>
+def display():
+	gl.glClear(gl.GL_COLOR_BUFFER_BIT)
+	gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 0, 4)
+	glut.glutSwapBuffers()
+
+def reshape(width, height):
+    gl.glViewport(0, 0, width, height)
+
+def keyboard(key, x, y):
+    if key == b'\x1b':
+        sys.exit()
+
+				</code></pre>
+			</section>
+			<section>
+				<p>Initialize the GLUT Library</p>
+				<pre><code>
+glut.glutInit()
+glut.glutInitDisplayMode(glut.GLUT_DOUBLE | glut.GLUT_RGBA)
+glut.glutCreateWindow('Hello world!')
+glut.glutReshapeWindow(512, 512)
+glut.glutReshapeFunc(reshape)
+glut.glutDisplayFunc(display)
+glut.glutKeyboardFunc(keyboard)
+				</code></pre>
+			</section>
+			<section>
+				<p>Build the Data</p>
+				<pre><code>
+data = np.zeros(4, [("position", np.float32, 2)])
+data['position'] = [(-1, +1), (+1, +1), (-1, -1), (+1, -1)]
+				</code></pre>
+			</section>
+			<section>
+				<p>Set the Shaders</p>
+				<pre><code>
+gl.glShaderSource(vertex, vertex_code)
+gl.glShaderSource(fragment, fragment_code)
+				</code></pre>
+			</section>
+			<section>
+				<p>Compile the Shaders</p>
+				<pre><code>
+gl.glCompileShader(vertex)
+if not gl.glGetShaderiv(vertex, gl.GL_COMPILE_STATUS):
+	error = gl.glGetShaderInfoLog(vertex).decode()
+	print(error)
+	raise RuntimeError("Shader compilation error")
+
+gl.glCompileShader(fragment)
+gl.glCompileShader(fragment)
+if not gl.glGetShaderiv(fragment, gl.GL_COMPILE_STATUS):
+	error = gl.glGetShaderInfoLog(fragment).decode()
+	print(error)
+	raise RuntimeError("Shader compilation error")	
+				</code></pre>
+			</section>
+			<section>
+				<p>Attach Shader Objects</p>
+				<pre><code>
+gl.glAttachShader(program, vertex)
+gl.glAttachShader(program, fragment)
+				</code></pre>
+			</section>
+			<section>
+				<p>Build the App</p>
+				<pre><code>
+gl.glLinkProgram(program)
+if not gl.glGetProgramiv(program, gl.GL_LINK_STATUS):
+	print(gl.glGetProgramInfoLog(program))
+	raise RuntimeError('Linking error')
+				</code></pre>
+			</section>
+			<section>
+				<p>
+					Remove Unneeded Shaders
+				</p>
+				<pre><code>
+gl.glDetachShader(program, vertex)
+gl.glDetachShader(program, fragment)
+				</code></pre>
+			</section>
+			<section>
+				<p>
+				Make program the default Program
+				</p>
+				<pre><code>
+gl.glUseProgram(program)
+				</code></pre>
+			</section>
+			<section>
+				<p>
+Build the Buffer
+				</p>
+			</section>
+			<section>
+				<p>
+Request a buffer slot from GPU					
+				</p>
+				<pre><code>
+buffer = gl.glGenBuffers(1)					
+				</code></pre>
+			</section>
+			<section>
+				<p>
+Make it as Default Buffer
+				</p>
+				<pre><code>
+gl.glBindBuffer(gl.GL_ARRAY_BUFFER, buffer)					
+				</code></pre>
+			</section>
+			<section>
+				<p>
+					Upload Data to GPU
+				</p>
+				<pre><code>
+gl.glBufferData(gl.GL_ARRAY_BUFFER, data.nbytes, data, gl.GL_DYNAMIC_DRAW)					
+				</code></pre>
+			</section>
+			<section>
+				<p>
+					Bind the Position Attribute
+				</p>
+				<pre><code>
+stride = data.strides[0]
+offset = ctypes.c_void_p(0)
+loc = gl.glGetAttribLocation(program, "position")
+gl.glEnableVertexAttribArray(loc)
+gl.glBindBuffer(gl.GL_ARRAY_BUFFER, buffer)
+gl.glVertexAttribPointer(loc, 2, gl.GL_FLOAT, False, stride, offset)					
+				</code></pre>
+			</section>	
+			<section>
+				<p>
+Open the Main Loop
+				</p>
+				<pre><code>
+glut.glutMainLoop()					
+				</code></pre>
+			</section>																					
+			<section>
+				<h2>Thank You!</h2>
+				<p>
+					<small>This presentation is made of <i class="fa glyphicon glyphicon-heart"></i> and <strong>HTML
+							5</strong></small>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
