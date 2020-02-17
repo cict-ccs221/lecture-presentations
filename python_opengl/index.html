@@ -138,6 +138,10 @@ glut.glutKeyboardFunc(keyboard)
 				<pre><code>
 data = np.zeros(4, [("position", np.float32, 2)])
 data['position'] = [(-1, +1), (+1, +1), (-1, -1), (+1, -1)]
+
+program  = gl.glCreateProgram()
+vertex   = gl.glCreateShader(gl.GL_VERTEX_SHADER)
+fragment = gl.glCreateShader(gl.GL_FRAGMENT_SHADER)
 				</code></pre>
 			</section>
 			<section>

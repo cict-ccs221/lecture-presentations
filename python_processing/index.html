@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Python and Processing</title>
+
+	<meta name="description" content="Presentation made with reveal.js">
+	<meta name="author" content="Mark Joseph J. Solidarios">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="assets/bg0.jpg">
+				<h1>Python and Processing</h1>
+				<p>Open-Source Graphics Library</p>
+				<div class="social-container">
+					<small>
+						Mark Joseph J. Solidarios
+						<a href="mailto: mjsolidarios@wvsu.edu.ph" target="_blank">
+							<img class="social" src="assets/mail.svg">
+						</a>
+						<a href="https://github.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/github.svg">
+						</a>
+						<a href="https://www.facebook.com/sexynojutsuuser" target="_blank">
+							<img class="social" src="assets/facebook.svg">
+						</a>
+						<a href="https://www.twitter.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/twitter.svg">
+						</a>
+					</small>
+				</div>
+			</section>
+			<section data-background="assets/bg0.jpg" class="left">
+				<img src="assets/nav.svg" alt="" class="icon-md" />
+				<p><small>
+						<i class="glyphicon glyphicon-info-sign"></i> Use the navigation buttons or the arrow keys to
+						proceed to the remaining slides.
+					</small></p>
+				<h2>F</h2>
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> You can also press
+						<span class="highlight">&gt;</span>
+						<span class="highlight">&gt;</span>F
+						<span class="highlight">&lt;</span>
+						<span class="highlight">&lt;</span> on your keyboard to show your presentation in fullscreen
+						mode.
+					</small>
+				</p>
+				<img src="assets/explore.svg" class="icon-md" alt="" />
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> This presentation is best explored with up-to-date
+						web browsers.
+					</small>
+				</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<img style="width: 200px; height: auto" src="assets/pde-1024.png" alt="" srcset="">
+				<h3>What is Processing?</h3>
+				<small>
+					<ul>
+						<li class="fragment">Coding with Visual Arts/Graphics</li>
+						<li class="fragment">Written in Java using JOGL (Java OpenGL)</li>
+						<li class="fragment">Uses OpenGL for accelerated 2D and 3D</li>
+						<li class="fragment">For GNU/Linux, Mac OS X, Windows, Android, and ARM</li>
+						<li class="fragment">Can have multiple modes (Java, JavaScript, Python, R...etc)</li>
+					</ul>
+				</small>
+			</section>
+			<section>
+				<h2>History</h2>
+				<p>Developers: Casey Reas (Artist, Professor, Developer) &amp; Benjamin Fry (Artist, Psychotherapist,
+					Broadcaster) - 2001</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Do anything related to graphics!</h3>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<img style="width: 800px; height: auto;" src="assets/window.png" alt="">
+				<small>Processing IDE</small>
+			</section>
+			<section>
+				<p>Hello Processing!</p>
+				<pre><code>
+print "Hello Processing"
+def setup():
+	size(200,200)
+	noLoop()
+
+def draw():
+	diagonals(40,90)
+	diagonals(60,62)
+	diagonals(20,40)
+
+
+def diagonals(x, y):
+	line(x, y, x+20, y-40)
+	line(x+10, y, x+30, y-40)
+	line(x+20, y, x+40, y-40)					
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>Each project is called a sketch and can be exported for presentation.</p>
+			</section>
+			<section>
+				<p>Sketch 1</p>
+				<p><small>
+						Hello Mouse!
+					</small></p>
+				<pre><code>
+def setup():
+	size(400, 400)
+	stroke(255)
+	background(192, 64, 0)
+
+def draw():
+	line(150, 25, mouseX, mouseY)				
+				</code></pre>
+			</section>
+			<section>
+				<p>Sketch 2</p>
+				<p><small>
+						Drawing!
+					</small></p>
+				<pre><code>
+def setup():
+	size(480, 120)
+
+def draw():
+	if  mousePressed:
+		fill(0)
+	else:
+		fill(255)
+	ellipse(mouseX, mouseY, 80, 80)					
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Shapes and Coordinates.</h3>
+				<p><small>Processing have these built-in functions.</small></p>
+				<p>size(), point(), line(), triangle(), quad(), rect(), ellipse(), bezier() background(), fill(),
+					stroke(), noFill(), noStroke()strokeWeight(), strokeCap(), strokeJoin()smooth(), noSmooth(),
+					ellipseMode(), rectMode()</p>
+			</section>
+			<section>
+				<p>Sketch 3</p>
+				<p><small>
+						Shapes!
+					</small></p>
+				<pre><code>
+def setup():
+	size(200, 200)
+	rectMode(CENTER);
+	rect(100,100,20,100);
+	ellipse(100,70,60,60);
+	ellipse(81,70,16,32); 
+	ellipse(119,70,16,32); 
+	line(90,150,80,160);
+	line(110,150,120,160);
+				
+def draw():
+	pass				
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Colors</h3>
+				<p><small>Adding of colors is more easier than the primitive OpenGL.</small></p>
+			</section>
+			<section>
+				<p>Sketch 4</p>
+				<p><small>
+						Shapes!
+					</small></p>
+				<pre><code>
+def setup():
+	size(200, 200);
+	background(255);    
+	stroke(0);          
+	fill(150);          
+	rect(50,50,75,100); 
+
+	fill(255,0,0);
+	ellipse(20,20,16,16);
+
+	fill(127,0,0);
+	ellipse(40,20,16,16);
+
+	fill(255,200,200);
+	ellipse(60,20,16,16);
+				
+def draw():
+	pass				
+				</code></pre>
+			</section>
+			<section>
+				<p>Sketch 5</p>
+				<p><small>
+						Objects!
+					</small></p>
+				<pre><code>
+c = color(0)
+x = 0.0
+y = 100.0
+speed = 1.0
+
+def setup():
+	size(200, 200)
+
+def draw():
+	background(255)
+	move()
+	display()
+
+def move():
+	global x
+	x = x + speed
+	if x > width:
+			x = 0
+
+def display():
+	fill(c)
+	rect(x, y, 30, 10)			
+				</code></pre>
+			</section>
+			<section>
+				<p>Sketch 6</p>
+				<p><small>
+						Interactivity (Mouse)
+					</small></p>
+				<pre><code>
+def setup():
+	size(100, 100)
+
+def draw():
+	if (mousePressed == True):
+		if (mouseButton == LEFT):
+			fill(0)   # Black
+		elif (mouseButton == RIGHT):
+			fill(255)   # White
+	else:
+		fill(126)   # Gray
+
+	rect(25, 25, 50, 50)		
+				</code></pre>
+			</section>
+			<section>
+				<p>Sketch 7</p>
+				<p><small>
+						Interactivity (Keyboard)
+					</small></p>
+				<pre><code>
+angle = 0
+
+def setup():
+	size(100, 100)
+	fill(0)
+
+
+def draw():
+	global angle
+	background(204)
+	if (keyPressed):
+		if ((ord(key) >= 32) and (ord(key) <= 126)):
+			# If the key is alphanumeric, use its value as an angle
+			angle = (ord(key) - 32) * 3
+
+	arc(50, 50, 66, 66, 0, radians(angle))		
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Exercise</h3>
+				<p>Create a color bar with 8 random colors.</p>
+			</section>
+			<section>
+				<h2>Thank You!</h2>
+				<p>
+					<small>This presentation is made of <i class="fa glyphicon glyphicon-heart"></i> and <strong>HTML
+							5</strong></small>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
