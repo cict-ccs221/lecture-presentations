@@ -1,0 +1,32 @@
+.left {
+    text-align: left
+}
+
+img {
+    background-color: rgba(0,0,0,0)!important;
+    border: none!important;
+    margin: 0 auto
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin:  0 auto
+}
+
+.profile-text{
+    line-height: 70px!important;
+    vertical-align: middle;
+    margin: 1rem
+}
+
+.icon-md{
+    height: 40px;
+    width: auto
+}
+
+.icon-lg{
+    height: 100px;
+    width: auto
+}

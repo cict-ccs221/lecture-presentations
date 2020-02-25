@@ -11,6 +11,9 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+        .grid-item{
+            width: 20%;
+        }
     </style>
 </head>
 
@@ -19,67 +22,82 @@
     <h1 class="text-xl">Lecture Contents</h1>
     <hr />
     <div class="container p-8">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Python for Graphics Programming</div>
-                <p class="text-gray-700 text-base">
-                    Python basics in preparation for the subject.
-                </p>
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+            <div class="rounded overflow-hidden shadow-lg bg-white grid-item m-4">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Computer Graphics</div>
+                    <p class="text-gray-700 text-base">
+                        Intro to Computer Graphics.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        href="computer-graphics/">Open</a>
+                </div>
             </div>
-            <div class="px-6 py-4">
-                <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-                    href="python_for_gfx/">Open</a>
+            <div class="rounded overflow-hidden shadow-lg bg-white grid-item m-4">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Python for Graphics Programming</div>
+                    <p class="text-gray-700 text-base">
+                        Python basics in preparation for the subject.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        href="python_for_gfx/">Open</a>
+                </div>
             </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-4 bg-white">
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Python Challenges</div>
-                <p class="text-gray-700 text-base">
-                    Python challenges to test student learnings.
-                </p>
+            <div class="rounded overflow-hidden shadow-lg mt-4 bg-white grid-item m-4">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Python Challenges</div>
+                    <p class="text-gray-700 text-base">
+                        Python challenges to test student learnings.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        href="python_challenges/">Open</a>
+                </div>
             </div>
-            <div class="px-6 py-4">
-                <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-                    href="python_challenges/">Open</a>
+            <div class="rounded overflow-hidden shadow-lg mt-4 bg-white grid-item m-4">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Python Functions and Methods</div>
+                    <p class="text-gray-700 text-base">
+                        Practice cleaner code and meet the Turtle.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        href="python_def/">Open</a>
+                </div>
             </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-4 bg-white">
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Python Functions and Methods</div>
-                <p class="text-gray-700 text-base">
-                    Practice cleaner code and meet the Turtle.
-                </p>
+            <div class="rounded overflow-hidden shadow-lg mt-4 bg-white grid-item m-4">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Python and OpenGL</div>
+                    <p class="text-gray-700 text-base">
+                        Learn how to implement OpenGL in Python.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        href="python_opengl/">Open</a>
+                </div>
             </div>
-            <div class="px-6 py-4">
-                <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-                    href="python_def/">Open</a>
-            </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-4 bg-white">
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Python and OpenGL</div>
-                <p class="text-gray-700 text-base">
-                    Learn how to implement OpenGL in Python.
-                </p>
-            </div>
-            <div class="px-6 py-4">
-                <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-                    href="python_opengl/">Open</a>
-            </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-4 bg-white">
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Python and Processing</div>
-                <p class="text-gray-700 text-base">
-                    Open-Source Graphics Library
-                </p>
-            </div>
-            <div class="px-6 py-4">
-                <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-                    href="python_processing/">Open</a>
+            <div class="rounded overflow-hidden shadow-lg mt-4 bg-white grid-item m-4 opacity-50">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Python and Processing</div>
+                    <p class="text-gray-700 text-base">
+                        Open-Source Graphics Library
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        href="python_processing/">Open</a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 
 </html>

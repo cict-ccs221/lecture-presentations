@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- created with bpmn-js / http://bpmn.io -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="467"
+   height="210"
+   viewBox="157 131 467 210"
+   version="1.1"
+   id="svg174"
+   sodipodi:docname="diagram_1.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata178">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     id="namedview176"
+     showgrid="false"
+     inkscape:zoom="1.3019272"
+     inkscape:cx="195.40084"
+     inkscape:cy="139.66258"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg174" />
+  <defs
+     id="defs8">
+    <marker
+       id="sequenceflow-end-white-black-5lmdwkiqf9mr6y95xod2kb225"
+       viewBox="0 0 20 20"
+       refX="11"
+       refY="10"
+       markerWidth="10"
+       markerHeight="10"
+       orient="auto">
+      <path
+         d="M 1 5 L 11 10 L 1 15 Z"
+         style="fill: black; stroke-width: 1px; stroke-linecap: round; stroke-dasharray: 10000, 1; stroke: black;"
+         id="path2" />
+    </marker>
+    <marker
+       id="conditional-flow-marker-white-black-5lmdwkiqf9mr6y95xod2kb225"
+       viewBox="0 0 20 20"
+       refX="-1"
+       refY="10"
+       markerWidth="10"
+       markerHeight="10"
+       orient="auto">
+      <path
+         d="M 0 10 L 8 6 L 16 10 L 8 14 Z"
+         style="fill: white; stroke-width: 1px; stroke-linecap: round; stroke-dasharray: 10000, 1; stroke: black;"
+         id="path5" />
+    </marker>
+  </defs>
+  <g
+     class="djs-group"
+     id="g20">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="SequenceFlow_1654txd"
+       style="display: block;"
+       id="g18">
+      <g
+         class="djs-visual"
+         id="g12">
+        <g
+           id="g1027">
+          <path
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             d="m 215,176 v 2 h 50 v -2 z"
+             id="path10"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path1033"
+             style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-dasharray:10000, 1;fill-opacity:1"
+             d="m 255,172 10,5 -10,5 z"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <polyline
+         points="215,177 265,177 "
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline14" />
+      <rect
+         x="209"
+         y="171"
+         width="62"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect16" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g32">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="SequenceFlow_0vk4h24"
+       style="display: block;"
+       id="g30">
+      <g
+         class="djs-visual"
+         id="g24">
+        <g
+           id="g1043"
+           style="fill:#ffffff;fill-opacity:1;stroke:none">
+          <path
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             d="m 314,217 v 38 h 2 v -38 z"
+             id="path22"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path1049"
+             style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-dasharray:10000, 1;fill-opacity:1"
+             d="m 320,245 -5,10 -5,-10 z"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <polyline
+         points="315,217 315,255 "
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline26" />
+      <rect
+         x="309"
+         y="211"
+         width="12"
+         height="50"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect28" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g44">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="SequenceFlow_0eam49m"
+       style="display: block;"
+       id="g42">
+      <g
+         class="djs-visual"
+         id="g36">
+        <g
+           id="g1035"
+           style="fill:#ffffff;fill-opacity:1;stroke:none">
+          <path
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             d="m 314,217 v 38 h 2 v -38 z"
+             id="path34"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path1041"
+             style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-dasharray:10000, 1;fill-opacity:1"
+             d="m 310,227 5,-10 5,10 z"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <polyline
+         points="315,255 315,217 "
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline38" />
+      <rect
+         x="309"
+         y="211"
+         width="12"
+         height="50"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect40" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g56">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="SequenceFlow_09wxjcr"
+       style="display: block;"
+       id="g54">
+      <g
+         class="djs-visual"
+         id="g48">
+        <g
+           id="g1019">
+          <path
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             d="m 365,176 v 2 h 50 v -2 z"
+             id="path46"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path1025"
+             style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-dasharray:10000, 1;fill-opacity:1"
+             d="m 405,172 10,5 -10,5 z"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <polyline
+         points="365,177 415,177 "
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline50" />
+      <rect
+         x="359"
+         y="171"
+         width="62"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect52" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g68">
+    <g
+       class="djs-element djs-connection"
+       data-element-id="SequenceFlow_02427ih"
+       style="display: block;"
+       id="g66">
+      <g
+         class="djs-visual"
+         id="g60">
+        <g
+           id="g1011">
+          <path
+             style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+             d="m 515,176 v 2 h 50 v -2 z"
+             id="path58"
+             inkscape:connector-curvature="0" />
+          <path
+             id="path1017"
+             style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:round;stroke-dasharray:10000, 1;stroke-opacity:1;fill-opacity:1"
+             d="m 555,172 10,5 -10,5 z"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <polyline
+         points="515,177 565,177 "
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="polyline62" />
+      <rect
+         x="509"
+         y="171"
+         width="62"
+         height="12"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect64" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g80">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="StartEvent_1"
+       style="display: block;"
+       transform="matrix(1 0 0 1 179 159)"
+       id="g78">
+      <g
+         class="djs-visual"
+         id="g72">
+        <circle
+           cx="18"
+           cy="18"
+           r="18"
+           style="stroke:#ffffff;stroke-width:2px;fill:none;fill-opacity:0.95;stroke-opacity:1"
+           id="circle70" />
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="36"
+         height="36"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect74" />
+      <rect
+         x="-6"
+         y="-6"
+         width="48"
+         height="48"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect76" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g94">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="StartEvent_1_label"
+       style="display: block;"
+       transform="matrix(1 0 0 1 163 202)"
+       id="g92">
+      <g
+         class="djs-visual"
+         id="g86">
+        <text
+           lineHeight="1.2"
+           class="djs-label"
+           style="font-family:Arial, sans-serif;font-size:11px;font-weight:normal;fill:#ffffff;fill-opacity:1;"
+           id="text84">
+          <tspan
+             x="0"
+             y="9.899999999999999"
+             id="tspan82"
+             style="fill:#ffffff;fill-opacity:1;">Input Devices</tspan>
+        </text>
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="68"
+         height="14"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect88" />
+      <rect
+         x="-6"
+         y="-6"
+         width="80"
+         height="26"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect90" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g110">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="Task_0h1f45g"
+       style="display: block;"
+       transform="matrix(1 0 0 1 265 137)"
+       id="g108">
+      <g
+         class="djs-visual"
+         id="g102">
+        <rect
+           x="0"
+           y="0"
+           width="100"
+           height="80"
+           rx="10"
+           ry="10"
+           style="stroke:#ffffff;stroke-width:2px;fill:none;fill-opacity:0.95;stroke-opacity:1"
+           id="rect96" />
+        <text
+           lineHeight="1.2"
+           class="djs-label"
+           style="font-family:Arial, sans-serif;font-size:12px;font-weight:normal;fill:#ffffff;fill-opacity:1;"
+           id="text100">
+          <tspan
+             x="22.4921875"
+             y="43.599999999999994"
+             id="tspan98"
+             style="fill:#ffffff;fill-opacity:1;">Processor</tspan>
+        </text>
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="100"
+         height="80"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect104" />
+      <rect
+         x="-6"
+         y="-6"
+         width="112"
+         height="92"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect106" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g126">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="Task_0evgp1p"
+       style="display: block;"
+       transform="matrix(1 0 0 1 265 255)"
+       id="g124">
+      <g
+         class="djs-visual"
+         id="g118">
+        <rect
+           x="0"
+           y="0"
+           width="100"
+           height="80"
+           rx="10"
+           ry="10"
+           style="stroke:#ffffff;stroke-width:2px;fill:none;fill-opacity:0.95;stroke-opacity:1"
+           id="rect112" />
+        <text
+           lineHeight="1.2"
+           class="djs-label"
+           style="font-family:Arial, sans-serif;font-size:12px;font-weight:normal;fill:#f1f1f1;fill-opacity:1;"
+           id="text116">
+          <tspan
+             x="28.3359375"
+             y="43.599999999999994"
+             id="tspan114"
+             style="fill:#f1f1f1;fill-opacity:1;">Memory</tspan>
+        </text>
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="100"
+         height="80"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect120" />
+      <rect
+         x="-6"
+         y="-6"
+         width="112"
+         height="92"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect122" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g142">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="Task_1avwlb0"
+       style="display: block;"
+       transform="matrix(1 0 0 1 415 137)"
+       id="g140">
+      <g
+         class="djs-visual"
+         id="g134">
+        <rect
+           x="0"
+           y="0"
+           width="100"
+           height="80"
+           rx="10"
+           ry="10"
+           style="stroke:#ffffff;stroke-width:2px;fill:none;fill-opacity:0.95;stroke-opacity:1"
+           id="rect128" />
+        <text
+           lineHeight="1.2"
+           class="djs-label"
+           style="font-family:Arial, sans-serif;font-size:12px;font-weight:normal;fill:#ffffff;fill-opacity:1;"
+           id="text132">
+          <tspan
+             x="14.6015625"
+             y="43.599999999999994"
+             id="tspan130"
+             style="fill:#ffffff;fill-opacity:1;">Frame Buffer</tspan>
+        </text>
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="100"
+         height="80"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect136" />
+      <rect
+         x="-6"
+         y="-6"
+         width="112"
+         height="92"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect138" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g156">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="IntermediateThrowEvent_1i2zgfe"
+       style="display: block;"
+       transform="matrix(1 0 0 1 565 159)"
+       id="g154">
+      <g
+         class="djs-visual"
+         id="g148">
+        <circle
+           cx="18"
+           cy="18"
+           r="18"
+           style="stroke:#ffffff;stroke-width:1px;fill:none;fill-opacity:0.95;stroke-opacity:1"
+           id="circle144" />
+        <circle
+           cx="18"
+           cy="18"
+           r="15"
+           style="stroke:#ffffff;stroke-width:1px;fill:none;stroke-opacity:1"
+           id="circle146" />
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="36"
+         height="36"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect150" />
+      <rect
+         x="-6"
+         y="-6"
+         width="48"
+         height="48"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect152" />
+    </g>
+  </g>
+  <g
+     class="djs-group"
+     id="g170">
+    <g
+       class="djs-element djs-shape"
+       data-element-id="IntermediateThrowEvent_1i2zgfe_label"
+       style="display: block;"
+       transform="matrix(1 0 0 1 548 202)"
+       id="g168">
+      <g
+         class="djs-visual"
+         id="g162">
+        <text
+           lineHeight="1.2"
+           class="djs-label"
+           style="font-family:Arial, sans-serif;font-size:11px;font-weight:normal;fill:#ffffff;fill-opacity:1;"
+           id="text160">
+          <tspan
+             x="0"
+             y="9.899999999999999"
+             id="tspan158"
+             style="fill:#ffffff;fill-opacity:1;">Output Device</tspan>
+        </text>
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="70"
+         height="14"
+         class="djs-hit"
+         style="fill: none; stroke-opacity: 0; stroke: white; stroke-width: 15px;"
+         id="rect164" />
+      <rect
+         x="-6"
+         y="-6"
+         width="82"
+         height="26"
+         class="djs-outline"
+         style="fill: none;"
+         id="rect166" />
+    </g>
+  </g>
+  <g
+     class="djs-drag-group"
+     style="pointer-events: none;"
+     transform="matrix(1 0 0 1 -150 118)"
+     id="g172" />
+</svg>

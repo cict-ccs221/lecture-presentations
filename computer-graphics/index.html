@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Computer Graphics</title>
+
+	<meta name="description" content="Presentation made with reveal.js">
+	<meta name="author" content="Mark Joseph J. Solidarios">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="left" data-background="assets/bg0.jpg">
+				<h2>Introduction to Computer Graphics</h2>
+				<img src="assets/profile.jpg" class="profile" /><small class="profile-text">mjsolidarios@wvsu.edu.ph |
+					https://github.com/mjsolidarios</small>
+			</section>
+			<section data-background="assets/bg0.jpg" class="left">
+				<img src="assets/nav.svg" alt="" class="icon-md"/>
+				<p><small>
+				Use the navigation buttons or the arrow keys to proceed to the remaining slides.
+				</small></p>
+		  <h2>F</h2>
+		  <p>
+			<small>
+			  You can also press
+			  <span class="highlight">&gt;</span>
+			  <span class="highlight">&gt;</span>F
+			  <span class="highlight">&lt;</span>
+			  <span class="highlight">&lt;</span> on your keyboard to show your presentation in fullscreen mode.
+			</small>
+		  </p>
+		  <img src="assets/explore.svg" class="icon-md" alt="" />
+		  <p>
+			<small>
+			  This presentation is best explored with up-to-date web browsers.
+			</small>
+		  </p>
+		</section>
+			<!-- Watch video about evolution of computer graphics -->
+			<section data-background="assets/bg0.jpg">
+				<h3>What is Computer Graphics?</h3>
+				<!-- Let the students write the definition in a sheet of paper -->
+				<p class="fragment">Computer graphics is the creation or manipulation of static and dynamic images on
+					the computer.</p>
+			</section>
+			
+			<section>
+				<section data-background="assets/bg0.jpg">
+					<p>System Diagram</p>
+					<img style="height: 350px; width: auto" src="assets/diagram_1.svg" alt="">
+				</section>
+				<section class="left" data-background="assets/bg0.jpg">
+					<img src="assets/input.svg" alt="">					
+					<p>Input Devices</p>
+					<small>
+						<ul>
+							<li class="fragment">
+								Keyboard
+							</li>
+							<li class="fragment">
+								Mouse
+							</li>
+							<li class="fragment">
+								Joystick
+							</li>
+							<li class="fragment">
+								Digitizer
+							</li>
+							<li class="fragment">
+								Voice Recognition
+							</li>
+							<li class="fragment">
+								Image Scanner
+							</li>
+						</ul>
+					</small>
+				</section>
+				<section data-background="assets/bg0.jpg">
+					<p>Processors - CPU, APU and GPU</p>
+					<img src="assets/apu.png" alt="">
+				</section>
+				<section class="left" data-background="assets/bg0.jpg">
+					<img src="assets/output.svg" alt="">
+					<p>Output Devices</p>
+					<small>
+						<ul>
+							<li>CRT - <span class="fragment">Cathode Ray Tube</span></li>
+							<li>LCD - <span class="fragment">Liquid Crystal Display</span></li>
+							<li>OLED - <span class="fragment">Organic LED</span></li>
+						</ul>
+					</small>
+				</section>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h2>Raster vs Vector</h2>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<h3>Raster</h3>
+				<p class="fragment">Comes from a latin word 'rastrum' meaning rake. Electron draws the image every line
+					forming a grid.</p>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<h3>Vector</h3>
+				<p class="fragment">Directly manipulates the electron beam - forming an image.</p>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<h3>Computer Graphics Driven</h3>
+				<ul>
+					<li class="fragment">Movie Industries</li>
+					<li class="fragment">Game Industries</li>
+					<li class="fragment">Medical Imaging and Scientific Visualizations</li>
+					<li class="fragment">Computer Aided Design</li>
+					<li class="fragment">User Interfaces</li>
+				</ul>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<h3>Graphics Libraries</h3>
+				<ul>
+					<li class="fragment">OpenGL</li>
+					<li class="fragment">Vulkan</li>
+					<li class="fragment">DirectX</li>			
+					<li class="fragment">WebGL</li>	
+				</ul>
+			</section>
+			<!-- Show comparison video -->
+			<section class="left" data-background="assets/bg0.jpg">
+				<img class="icon-lg" src="assets/opengl.svg" alt="">
+				<p class="fragment">OpenGL, short for "Open Graphics Library," is an application programming interface (API) designed for rendering 2D and 3D graphics. It provides a common set of commands that can be used to manage graphics in different applications and on multiple platforms.</p>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<img class="icon-lg" src="assets/vulkan.svg" alt="">
+				<p class="fragment">Vulkan is a new generation graphics and compute API that provides high-efficiency, cross-platform access to modern GPUs used in a wide variety of devices from PCs and consoles to mobile phones and embedded platforms.</p>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<img class="icon-lg" src="assets/directx.svg" alt="">
+				<p class="fragment">Microsoft DirectX is a collection of application programming interfaces for handling tasks related to multimedia, especially game programming and video, on Microsoft platforms.</p>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<img class="icon-lg" src="assets/webgl.svg" alt="">
+				<p class="fragment">WebGL enables web content to use an API based on OpenGL to perform 2D and 3D rendering in an HTML canvas in browsers that support it without the use of plug-ins.</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Graphics Library Pipeline</h3>
+				<img src="assets/gl-pipeline.png" alt="">			
+			</section>
+			<section>
+				<p>Let us try OpenGL</p>
+				<pre><code>
+import sys
+import ctypes
+import numpy as np
+import OpenGL.GL as gl
+import OpenGL.GLUT as glut
+
+vertex_code = """
+	attribute vec2 position;
+	void main(){ gl_Position = vec4(position, 0.0, 1.0); } """
+
+fragment_code = """
+	void main() { gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0); } """
+
+def display():
+	gl.glClear(gl.GL_COLOR_BUFFER_BIT)
+	gl.glDrawArrays(gl.GL_TRIANGLE_STRIP, 0, 4)
+	glut.glutSwapBuffers()
+
+def reshape(width,height):
+	gl.glViewport(0, 0, width, height)
+
+def keyboard( key, x, y ):
+	if key == b'\x1b':
+		sys.exit( )
+
+
+# GLUT init
+# --------------------------------------
+glut.glutInit()
+glut.glutInitDisplayMode(glut.GLUT_DOUBLE | glut.GLUT_RGBA)
+glut.glutCreateWindow('Hello world!')
+glut.glutReshapeWindow(512,512)
+glut.glutReshapeFunc(reshape)
+glut.glutDisplayFunc(display)
+glut.glutKeyboardFunc(keyboard)
+
+# Build data
+# --------------------------------------
+data = np.zeros(4, [("position", np.float32, 2)])
+data['position'] = [(-1,+1), (+1,+1), (-1,-1), (+1,-1)]
+
+# Build & activate program
+# --------------------------------------
+# Request a program and shader slots from GPU
+program  = gl.glCreateProgram()
+vertex   = gl.glCreateShader(gl.GL_VERTEX_SHADER)
+fragment = gl.glCreateShader(gl.GL_FRAGMENT_SHADER)
+
+# Set shaders source
+gl.glShaderSource(vertex, vertex_code)
+gl.glShaderSource(fragment, fragment_code)
+
+# Compile shaders
+gl.glCompileShader(vertex)
+if not gl.glGetShaderiv(vertex, gl.GL_COMPILE_STATUS):
+	error = gl.glGetShaderInfoLog(vertex).decode()
+	print(error)
+	raise RuntimeError("Shader compilation error")
+				
+gl.glCompileShader(fragment)
+gl.glCompileShader(fragment)
+if not gl.glGetShaderiv(fragment, gl.GL_COMPILE_STATUS):
+	error = gl.glGetShaderInfoLog(fragment).decode()
+	print(error)
+	raise RuntimeError("Shader compilation error")                
+
+# Attach shader objects to the program
+gl.glAttachShader(program, vertex)
+gl.glAttachShader(program, fragment)
+
+# Build program
+gl.glLinkProgram(program)
+if not gl.glGetProgramiv(program, gl.GL_LINK_STATUS):
+	print(gl.glGetProgramInfoLog(program))
+	raise RuntimeError('Linking error')
+
+# Get rid of shaders (no more needed)
+gl.glDetachShader(program, vertex)
+gl.glDetachShader(program, fragment)
+
+# Make program the default program
+gl.glUseProgram(program)
+
+
+# Build buffer
+# --------------------------------------
+
+# Request a buffer slot from GPU
+buffer = gl.glGenBuffers(1)
+
+# Make this buffer the default one
+gl.glBindBuffer(gl.GL_ARRAY_BUFFER, buffer)
+
+# Upload data
+gl.glBufferData(gl.GL_ARRAY_BUFFER, data.nbytes, data, gl.GL_DYNAMIC_DRAW)
+
+
+# Bind the position attribute
+# --------------------------------------
+stride = data.strides[0]
+offset = ctypes.c_void_p(0)
+loc = gl.glGetAttribLocation(program, "position")
+gl.glEnableVertexAttribArray(loc)
+gl.glBindBuffer(gl.GL_ARRAY_BUFFER, buffer)
+gl.glVertexAttribPointer(loc, 2, gl.GL_FLOAT, False, stride, offset)
+
+# Enter the mainloop
+# --------------------------------------
+glut.glutMainLoop()					
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>The Easy Way</h3>
+				<p class="fragment">"Patience is now a skill"</p>				
+			</section>
+			<section>
+				<p>Using glumpy</p>
+				<pre><code>
+from glumpy import app, gloo, gl
+
+vertex = """
+	attribute vec2 position;
+	void main(){ gl_Position = vec4(position, 0.0, 1.0); } """
+
+fragment = """
+	void main() { gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0); } """
+
+# Create a window with a valid GL context
+window = app.Window()
+
+# Build the program and corresponding buffers (with 4 vertices)
+quad = gloo.Program(vertex, fragment, count=4)
+
+# Upload data into GPU
+quad['position'] = (-1,+1), (+1,+1), (-1,-1), (+1,-1)
+
+# Tell glumpy what needs to be done at each redraw
+@window.event
+def on_draw(dt):
+	window.clear()
+	quad.draw(gl.GL_TRIANGLE_STRIP)
+
+# Run the app
+app.run()
+						
+				</code></pre>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>What do you think?</h3>
+				<p class="fragment">How's Graphics Programming with OpenGL?</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Thank you!</h3>				
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
