@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Python, Processing and OOP</title>
+
+	<meta name="description" content="Presentation made with reveal.js">
+	<meta name="author" content="Mark Joseph J. Solidarios">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="assets/bg0.jpg">
+				<h3>Python, Processing and OOP</h3>
+				<p><small>Applying OOP Concepts in Processing</small></p>
+				<div class="social-container">
+					<small>
+						Mark Joseph J. Solidarios
+						<a href="mailto: mjsolidarios@wvsu.edu.ph" target="_blank">
+							<img class="social" src="assets/mail.svg">
+						</a>
+						<a href="https://github.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/github.svg">
+						</a>
+						<a href="https://www.facebook.com/sexynojutsuuser" target="_blank">
+							<img class="social" src="assets/facebook.svg">
+						</a>
+						<a href="https://www.twitter.com/mjsolidarios" target="_blank">
+							<img class="social" src="assets/twitter.svg">
+						</a>
+					</small>
+				</div>
+			</section>
+			<section data-background="assets/bg0.jpg" class="left">
+				<img src="assets/nav.svg" alt="" class="icon-md" />
+				<p><small>
+						<i class="glyphicon glyphicon-info-sign"></i> Use the navigation buttons or the arrow keys to
+						proceed to the remaining slides.
+					</small></p>
+				<h2>F</h2>
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> You can also press
+						<span class="highlight">&gt;</span>
+						<span class="highlight">&gt;</span>F
+						<span class="highlight">&lt;</span>
+						<span class="highlight">&lt;</span> on your keyboard to show your presentation in fullscreen
+						mode.
+					</small>
+				</p>
+				<img src="assets/explore.svg" class="icon-md" alt="" />
+				<p>
+					<small>
+						<i class="glyphicon glyphicon-info-sign"></i> This presentation is best explored with up-to-date
+						web browsers.
+					</small>
+				</p>
+			</section>
+			<section class="left" data-background="assets/bg0.jpg">
+				<h3>What is OOP?</h3>
+				<p class="fragment">
+					OOP (Object Oriented Programming) imitates how the real world works thru programming. <span
+						class="fragment">It is analogous to our brain and each program is made of multiple entities
+						called objects.</span> <span class="fragment">It helps developers implement better reusable
+						codes.</span>
+				</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<h3>Review</h3>
+				<p class="fragment">Based on what you learned in your C++ class, what are the four major principles of
+					OOP?</p>
+				<p><small class="fragment">-Answer-</small></p>
+				<ul>
+					<li class="fragment">Encapsulation</li>
+					<li class="fragment">Data Abstraction</li>
+					<li class="fragment">Inheritance</li>
+					<li class="fragment">Polymorphism</li>
+				</ul>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<section>
+					<h3>Example Object: Human</h3>
+					<p><small>*Press down arrow to continue</small></p>
+				</section>
+				<section>
+					<p>Human Properties</p>
+					<ul>
+						<li class="fragment">Height</li>
+						<li class="fragment">Weight</li>
+						<li class="fragment">Gender</li>
+						<li class="fragment">Eye Color</li>
+						<li class="fragment">Hair color</li>
+					</ul>
+				</section>
+				<section>
+					<p>Human Functions</p>
+					<ul>
+						<li class="fragment">Sleep</li>
+						<li class="fragment">Wake up</li>
+						<li class="fragment">Eat</li>
+						<li class="fragment">Walk</li>
+					</ul>
+				</section>
+			</section>
+			<section data-background="assets/close-up-of-coffee-cup-324028.jpg" class="left">
+				<p style="background-color: rgba(0,0,0,0.8); padding: 1rem;">*Think of a coffee maker. A coffee maker
+					makes coffees, but it is not a coffee itself. The coffee
+					maker is the <span style="font-weight: bold;">class</span>, the coffees are the <span
+						style="font-weight: bold;">objects</span>. </p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<section>
+					<h4>Implementing OOP in Processing</h4>
+					<small>*Press down arrow to continue</small>
+				</section>
+				<section>
+					<p>Data</p>
+					<ul>
+						<li class="fragment">Car Color</li>
+						<li class="fragment">Car x location</li>
+						<li class="fragment">Car y location</li>
+						<li class="fragment">Car x speed</li>
+					</ul>
+				</section>
+				<section>
+					<p>Setup</p>
+					<ul>
+						<li class="fragment">Initialize car color.</li>
+						<li class="fragment">Initialize car location to starting point.</li>
+						<li class="fragment">Initialize car speed.</li>
+					</ul>
+				</section>
+				<section>
+					<p>Draw</p>
+					<ul>
+						<li class="fragment">Fill background.</li>
+						<li class="fragment">Display car at location with color.</li>
+						<li class="fragment">Increment car's location by speed.</li>
+					</ul>
+				</section>
+				<section>
+					<p>Code Implementation</p>
+					<pre><code>
+c = color(0)
+x = 0.0
+y = 100.0
+speed = 1.0
+
+def setup():
+	size(200, 200)
+
+def draw():
+	background(255)
+	move()
+	display()
+
+def move():
+	global x
+	x = x + speed
+	if x > width:
+	x = 0
+
+def display():
+	fill(c)
+	rect(x, y, 30, 10)						
+					</code></pre>
+				</section>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>The example we did earlier demonstrates how the use of objects in Processing makes for clean,
+					readable code</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>The hard work goes into writing the object template, that is the class itself (a.k.a Car Maker).</p>
+			</section>
+			<section data-background="assets/bg0.jpg">
+				<p>All classes must include four elements: <span class="fragment">name</span>, <span class="fragment">data</span>, <span class="fragment">initialization</span> <span class="fragment">and methods.</span></p>
+			</section>
+			<section>
+				<p>The Code</p>
+				<pre><code>
+class Car(object):
+	def __init__(self, c, xpos, ypos, xspeed):
+		self.c = c
+		self.xpos = xpos
+		self.ypos = ypos
+		self.xspeed = xspeed
+
+	def display(self):
+		stroke(0)
+		fill(self.c)
+		rectMode(CENTER)
+		rect(self.xpos, self.ypos, 20, 10);
+
+	def drive(self):
+		self.xpos = self.xpos + self.xspeed;
+		if self.xpos > width:
+			self.xpos = 0
+
+myCar1 = Car(color(255, 0, 0), 0, 100, 2)
+myCar2 = Car(color(0, 255, 255), 0, 10, 1)
+
+def setup():
+	size(200,200)
+
+def draw(): 
+	background(255)
+	myCar1.drive()
+	myCar1.display()
+	myCar2.drive()
+	myCar2.display()				
+				</code></pre>
+			</section>
+			<section>
+				<h2>Thank You!</h2>
+				<p><small>Reference: Official Python Docs &amp; https://py.processing.org/tutorials/objects/</small></p>
+				<hr />
+				<p>
+					<small>This presentation is made of <i class="fa glyphicon glyphicon-heart"></i> and <strong>HTML
+							5</strong></small>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
